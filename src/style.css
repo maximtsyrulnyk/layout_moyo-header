@@ -3,12 +3,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body,
 ul,
 h1,
@@ -41,7 +35,7 @@ body {
   padding: 0 20px;
 }
 
-.logo__img {
+.logo__image {
   display: block;
   height: 40px;
 }
