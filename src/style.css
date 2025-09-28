@@ -1,3 +1,74 @@
-body {
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables */
+:root {
+  --blue-color: #1976d2;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 80px; /* Приклад висоти хедера */
+}
+
+.logo img {
+  display: block;
+  height: 40px; /* Приклад висоти лого */
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li:not(:last-child) {
+  margin-right: 30px; /* Відступ між пунктами меню */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 50px; /* Висота лінків меню */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover State */
+nav a:hover {
+  color: var(--blue-color);
+}
+
+/* Active State */
+nav a.is-active {
+  color: var(--blue-color);
+}
+
+nav a.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-color);
 }
