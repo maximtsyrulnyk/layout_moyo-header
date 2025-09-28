@@ -1,9 +1,23 @@
 /* CSS Reset */
-* {
+html {
   box-sizing: border-box;
 }
 
-body, ul, h1, h2, h3, h4, h5, h6, p {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -20,50 +34,49 @@ body {
 }
 
 /* Header Styles */
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  height: 80px; /* Приклад висоти хедера */
 }
 
-.logo img {
+.logo__img {
   display: block;
-  height: 40px; /* Приклад висоти лого */
+  height: 40px;
 }
 
 /* Navigation Styles */
-nav ul {
+.nav__list {
   display: flex;
   list-style: none;
 }
 
-nav li:not(:last-child) {
-  margin-right: 30px; /* Відступ між пунктами меню */
+.nav__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-nav a {
+.nav__link {
   text-decoration: none;
   color: #333;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 50px; /* Висота лінків меню */
-  position: relative;
+  line-height: 50px;
   transition: color 0.3s ease;
 }
 
 /* Hover State */
-nav a:hover {
+.nav__link:hover {
   color: var(--blue-color);
 }
 
 /* Active State */
-nav a.is-active {
+.nav__link.is-active {
   color: var(--blue-color);
+  position: relative;
 }
 
-nav a.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інтернет-магазин</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтернет-магазин</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="/" class="logo">
-            <img src="images/logo.svg" alt="Логотип магазину">
-        </a>
+  <header class="header">
+    <a href="/" class="logo">
+      <img src="images/logo.svg" alt="Логотип магазину" class="logo__img">
+    </a>
 
-        <nav>
-            <ul>
-                <li><a href="#" class="is-active">Головна</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#" data-qa="hover">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link is-active">Головна</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Про нас</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-qa="hover">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 </html>
