@@ -11,6 +11,8 @@ html {
 
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
 }
 
 ul {
@@ -25,11 +27,6 @@ ul {
   --black: #000;
 }
 
-/* Base Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
 
 /* Header Styles */
 .header {
