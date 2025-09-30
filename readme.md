@@ -3,7 +3,7 @@ Create an HTML page with the header using `flexbox` based on the [Figma Mockup](
 
 The page should match the design Pixel Perfect: all the sizes, colors and distances MUST be the same as on the design.
 
-> Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline)
+> Here are the [Layout Tasks Instructions](https://maximtsyrulnyk.github.io/layout_task-guideline)
 
 ## Requirements:
 
